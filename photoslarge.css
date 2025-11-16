@@ -1,0 +1,28 @@
+/* Grote scherm layout */
+main {
+    width: 900px;
+    margin: auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.photo-section {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.photo-section img {
+    width: 50%;
+}
+
+.description {
+    width: 50%;
+}
+
+/* Tabel centreren */
+.session-info {
+    margin-top: 2rem;
+}
