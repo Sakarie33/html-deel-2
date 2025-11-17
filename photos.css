@@ -95,12 +95,12 @@ nav a:focus {
 }
 
 /* ----------------------------
-   TABEL
+   TABEL 
 ------------------------------- */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1rem;
+    margin-top: 1.1rem;
 }
 
 th {
@@ -120,7 +120,7 @@ tr:nth-child(even) td {
 }
 
 /* --------------------------
-   FOOTER
+   Footer    
 --------------------------- */
 footer {
     background: var(--main-dark);
