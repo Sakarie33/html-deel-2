@@ -1,0 +1,153 @@
+/* ---------- Algemene styling ---------- */
+
+body {
+    margin: 0;
+    background-color: #0e0e0f;
+    color: #f0f0f0;
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Highlight */
+::selection {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #9ad5ff;
+}
+a:hover, a:focus {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ---------- Header ---------- */
+.hero {
+    background: url("img/hero-dark.jpg") no-repeat center/cover;
+    padding: 120px 20px;
+}
+
+/* ---------- Intro ---------- */
+.intro {
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ---------- Project blocks ---------- */
+.project {
+    padding: 20px;
+    margin: 0 auto 40px auto;
+    max-width: 1100px;
+    position: relative;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 6px;
+    filter: brightness(0.9);
+}
+
+/* Overlay (large screen vereist) */
+.overlay {
+    display: none;
+}
+
+/* Clipping path */
+.clipped {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+
+/* ---------- Footer ---------- */
+.clearfix {
+    clear: both;
+}
+
+
+.footer {
+    background: #111112;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+
+
+/* -------------------------------------------------
+   MEDIA QUERIES
+   SMALL → MEDIUM → LARGE
+---------------------------------------------------*/
+
+/* MEDIUM SCREEN (bijv. vanaf 600px) */
+@media screen and (min-width: 600px) {
+
+    .project-img, .project-text {
+        float: left;
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    .project-text {
+        margin-top: 0;
+        
+    }
+
+    .project-text:last-child {
+        margin-right: 0;
+    }
+}
+
+/* LARGE SCREEN (bijv. vanaf 1000px) */
+@media screen and (min-width: 1000px) {
+
+    /* 3 elementen naast elkaar */
+    .project {
+        float: left;
+        width: 31%;
+        margin-right: 2%;
+    }
+
+
+    .project:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    /* Overlay */
+    .overlay {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        padding: 10px 15px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        border-radius: 4px;
+    }
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
+
+
+
+
+
